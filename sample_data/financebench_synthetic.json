@@ -1,0 +1,342 @@
+{
+  "_note": "Synthetic FinanceBench-style corpus for RAG-Bench. 12 documents, 30 questions. Companies, figures and filings are invented - this is NOT real FinanceBench data and results should be labeled as synthetic. Built to be structurally realistic: multi-paragraph documents so paragraph-aware chunking differs from fixed-size, facts placed at varying depths, and 5 cross-document questions where relevant_doc_ids has length 2 so recall@k is non-trivial.",
+  "documents": [
+    {
+      "doc_id": "doc_001",
+      "source": "Northwind Systems Inc. 10-K Excerpt FY2025 (synthetic)",
+      "text": "Northwind Systems Inc. reported total revenue of $8.42 billion for fiscal year 2025, an increase of 14.2% compared to $7.37 billion in fiscal year 2024. Growth was driven primarily by the Cloud Infrastructure segment, which grew 28% year-over-year, offsetting a 6% decline in the legacy On-Premise Licensing segment.\n\nGross profit margin improved to 68.4%, up from 65.1% in the prior year. Management attributed the improvement to a favorable shift in revenue mix toward higher-margin subscription products and to data center efficiency gains realized in the second half of the year.\n\nOperating expenses totaled $4.10 billion, up from $3.62 billion. Research and development spending rose 22% year-over-year to $1.84 billion, reflecting accelerated investment in machine learning infrastructure. Sales and marketing expense was $1.71 billion, roughly flat as a percentage of revenue at 20.3%.\n\nNet income for fiscal year 2025 was $1.38 billion, compared to $1.09 billion in fiscal year 2024, representing diluted earnings per share of $4.12 versus $3.24. The effective tax rate was 18.7%.\n\nCash and cash equivalents stood at $3.24 billion as of the end of the fiscal year, down from $3.91 billion, primarily due to a $900 million share repurchase program and the $420 million acquisition of Meridian Analytics completed in the third quarter. Total long-term debt was $2.15 billion, unchanged from the prior year.\n\nThe company expects fiscal year 2026 revenue growth in the range of 11% to 13%, with continued margin expansion of 100 to 150 basis points. Management identified customer concentration as a principal risk, noting that the top ten customers accounted for 24% of total revenue."
+    },
+    {
+      "doc_id": "doc_002",
+      "source": "Halcyon Retail Group 10-K Excerpt FY2025 (synthetic)",
+      "text": "Halcyon Retail Group generated net sales of $16.8 billion in fiscal year 2025, a decrease of 2.1% from $17.16 billion in fiscal year 2024. Comparable store sales declined 3.4%, partially offset by 11% growth in the digital channel, which represented 22% of total net sales compared to 19% in the prior year.\n\nGross margin contracted to 31.2% from 33.8%, driven by elevated markdown activity intended to clear excess seasonal inventory and by higher inbound freight costs. Inventory at year end was $2.94 billion, down 8% from $3.20 billion following an aggressive clearance program in the fourth quarter.\n\nSelling, general and administrative expenses were $4.42 billion, or 26.3% of net sales, compared to 25.1% in the prior year. The deleverage reflects fixed store occupancy costs spread across a lower sales base.\n\nThe company recorded a pre-tax impairment charge of $310 million related to 84 underperforming store locations. Including this charge, net income was $186 million, down sharply from $612 million in fiscal year 2024. Excluding the impairment, adjusted net income was $431 million.\n\nHalcyon closed 61 stores during the year and opened 12, ending with 1,344 locations. Management announced plans to close an additional 90 to 120 stores over the next two fiscal years as part of a fleet optimization initiative.\n\nCash flow from operations was $740 million, compared to $1.12 billion in the prior year. The company suspended its share repurchase program in the second quarter but maintained its quarterly dividend of $0.28 per share."
+    },
+    {
+      "doc_id": "doc_003",
+      "source": "Cascade Manufacturing Corp 10-K Excerpt FY2025 (synthetic)",
+      "text": "Cascade Manufacturing Corp reported revenue of $5.61 billion for fiscal year 2025, up 7.8% from $5.20 billion. The Industrial Components division contributed $3.35 billion and the Aerospace Fasteners division contributed $2.26 billion, with the latter growing 15% on strong commercial aircraft demand.\n\nGross profit was $1.53 billion, representing a gross margin of 27.3%, compared to 26.1% in fiscal year 2024. The 120 basis point improvement came primarily from pricing actions taken in the first quarter and from lower raw material costs, partially offset by wage inflation at the company's four domestic plants.\n\nOperating income reached $684 million with an operating margin of 12.2%. Interest expense of $118 million reflected the full-year impact of the $1.6 billion senior notes issued in the prior fiscal year to fund the Trellis Aviation acquisition.\n\nNet income was $438 million compared to $372 million, and diluted earnings per share increased to $6.41 from $5.38. The company generated free cash flow of $512 million and reduced total debt by $250 million during the year.\n\nCapital expenditures were $287 million, up from $198 million, largely allocated to automation upgrades at the Ohio and Tennessee facilities. Management expects capital expenditures of $310 million to $340 million in fiscal year 2026.\n\nBacklog at year end stood at $4.12 billion, an increase of 19% year-over-year, providing what management described as strong visibility into the coming two fiscal years."
+    },
+    {
+      "doc_id": "doc_004",
+      "source": "Pinnacle Financial Bancorp 10-K Excerpt FY2025 (synthetic)",
+      "text": "Pinnacle Financial Bancorp reported net interest income of $2.86 billion for fiscal year 2025, an increase of 4.3% from $2.74 billion. Net interest margin was 3.18%, compared to 3.31% in the prior year, as deposit costs rose faster than asset yields.\n\nTotal assets stood at $94.2 billion at year end, up from $89.7 billion. Total loans grew 5.1% to $61.4 billion, with commercial and industrial lending up 8% and commercial real estate lending roughly flat as the bank tightened underwriting standards in that category.\n\nProvision for credit losses was $412 million, compared to $268 million in the prior year. The allowance for credit losses represented 1.34% of total loans, up from 1.21%. Net charge-offs were 0.38% of average loans, concentrated in the office commercial real estate portfolio.\n\nNoninterest income totaled $986 million, including $312 million in wealth management fees and $224 million in card interchange revenue. Noninterest expense was $2.21 billion, producing an efficiency ratio of 57.4%.\n\nNet income available to common shareholders was $968 million, or $4.87 per diluted share, compared to $1.06 billion and $5.29 per diluted share in fiscal year 2024. Return on average tangible common equity was 13.2%.\n\nThe Common Equity Tier 1 capital ratio was 11.4% at year end, well above regulatory minimums. The board authorized a $600 million share repurchase program in the fourth quarter."
+    },
+    {
+      "doc_id": "doc_005",
+      "source": "Aventine Pharmaceuticals 10-K Excerpt FY2025 (synthetic)",
+      "text": "Aventine Pharmaceuticals recorded total revenue of $12.34 billion in fiscal year 2025, an increase of 9.6% over $11.26 billion in the prior year. Product revenue was $11.71 billion and collaboration revenue was $630 million.\n\nThe company's lead product, Zenvora, generated $4.88 billion in net sales, up 18% year-over-year, and now represents 39.5% of total product revenue. The second largest product, Coralux, declined 11% to $1.92 billion following loss of exclusivity in three European markets.\n\nResearch and development expense was $3.41 billion, or 27.6% of total revenue, compared to $3.09 billion in the prior year. The increase reflects three Phase III programs advancing simultaneously and a $180 million upfront payment associated with the Kestrel Bio licensing agreement.\n\nGross margin on product sales was 79.2%, down modestly from 80.5%, reflecting an unfavorable geographic mix and increased manufacturing costs at the Ireland facility.\n\nNet income was $2.74 billion compared to $2.51 billion. The company recorded a $340 million charge related to the settlement of patent litigation concerning Coralux, which reduced diluted earnings per share by approximately $0.61.\n\nAventine faces loss of exclusivity for Zenvora in the United States beginning in fiscal year 2029. Management has stated that offsetting this exposure through the pipeline and business development remains the company's primary strategic priority."
+    },
+    {
+      "doc_id": "doc_006",
+      "source": "Silverline Energy Partners 10-K Excerpt FY2025 (synthetic)",
+      "text": "Silverline Energy Partners reported total revenue of $9.87 billion for fiscal year 2025, a decrease of 12.4% from $11.27 billion, primarily reflecting lower realized commodity prices. Average realized price per barrel of oil equivalent was $58.40, compared to $71.20 in the prior year.\n\nTotal production averaged 462,000 barrels of oil equivalent per day, an increase of 6% from 436,000 in fiscal year 2024. Production growth came primarily from the Permian Basin assets, where the company brought 78 new wells online during the year.\n\nLease operating expense was $8.14 per barrel of oil equivalent, down from $8.92, reflecting improved drilling efficiency and lower service costs. Total cash operating costs including production taxes were $14.62 per barrel of oil equivalent.\n\nCapital expenditures totaled $2.94 billion, within the company's stated guidance range of $2.85 billion to $3.05 billion. Free cash flow was $1.42 billion compared to $2.88 billion in the prior year.\n\nNet income was $1.16 billion, or $3.94 per diluted share, compared to $2.31 billion and $7.62 per diluted share. The company returned $890 million to shareholders through dividends and repurchases, representing 63% of free cash flow.\n\nProved reserves at year end were 1.84 billion barrels of oil equivalent, up 3% from 1.79 billion, with a reserve replacement ratio of 138%."
+    },
+    {
+      "doc_id": "doc_007",
+      "source": "Meridian Logistics Holdings 10-K Excerpt FY2025 (synthetic)",
+      "text": "Meridian Logistics Holdings generated revenue of $7.15 billion in fiscal year 2025, an increase of 3.2% from $6.93 billion. The Freight Brokerage segment grew 8% to $3.42 billion while the Asset-Based Trucking segment declined 1% to $3.73 billion amid soft spot market rates.\n\nOperating ratio for the consolidated business was 91.4%, compared to 89.8% in the prior year, indicating margin compression. The Asset-Based Trucking segment operating ratio deteriorated to 93.1% from 90.2%, driven by lower revenue per loaded mile and persistent driver wage inflation.\n\nPurchased transportation expense was $2.88 billion, or 40.3% of revenue, up from 38.1% as the brokerage mix increased. Fuel expense declined 9% to $612 million on lower diesel prices.\n\nNet income was $312 million compared to $421 million in fiscal year 2024, and diluted earnings per share was $2.84 versus $3.79. The effective tax rate was 24.1%.\n\nThe company operated 8,940 tractors and 26,100 trailers at year end, a net reduction of 340 tractors as management deferred replacement purchases. Average tractor age increased to 3.1 years from 2.6 years.\n\nCash flow from operations was $684 million and capital expenditures net of proceeds from equipment sales were $290 million. Management guided to a fiscal year 2026 operating ratio of 89% to 91%, contingent on freight market recovery in the second half."
+    },
+    {
+      "doc_id": "doc_008",
+      "source": "Aldergate Insurance Group 10-K Excerpt FY2025 (synthetic)",
+      "text": "Aldergate Insurance Group reported total revenue of $21.4 billion for fiscal year 2025, comprising $18.2 billion in net earned premiums and $3.2 billion in net investment income. Net earned premiums grew 6.8% year-over-year while net investment income grew 21% on higher reinvestment yields.\n\nThe combined ratio was 96.2%, compared to 99.1% in the prior year. The loss ratio improved to 63.8% from 67.4%, benefiting from lower catastrophe losses, which totaled $840 million compared to $1.42 billion in fiscal year 2024. The expense ratio was 32.4%, roughly flat.\n\nPersonal Lines net earned premiums were $9.6 billion, up 9%, driven by rate increases averaging 11% across the auto book. Commercial Lines net earned premiums were $8.6 billion, up 4%, with rate increases of approximately 6%.\n\nNet income was $2.18 billion, or $8.94 per diluted share, compared to $1.14 billion and $4.61 per diluted share. The improvement primarily reflects the lower catastrophe load and stronger investment results.\n\nTotal invested assets were $68.4 billion with an average portfolio duration of 4.2 years and an average credit quality of A+. Unrealized losses on the fixed income portfolio narrowed to $2.1 billion from $3.4 billion.\n\nBook value per share increased 14% to $61.28. The company repurchased $720 million of common stock and paid $410 million in dividends during the year."
+    },
+    {
+      "doc_id": "doc_009",
+      "source": "Brightpath Communications 10-K Excerpt FY2025 (synthetic)",
+      "text": "Brightpath Communications reported total revenue of $28.9 billion for fiscal year 2025, essentially flat compared to $28.8 billion. Wireless service revenue grew 2.4% to $19.4 billion while Broadband revenue grew 5.1% to $6.2 billion, offset by a 21% decline in Legacy Wireline revenue to $3.3 billion.\n\nThe company added 1.24 million net postpaid phone subscribers during the year, compared to 940,000 in the prior year. Postpaid phone churn was 0.87%, improved from 0.94%. Average revenue per postpaid account was $138.40, up 1.2%.\n\nAdjusted EBITDA was $10.6 billion with a margin of 36.7%, compared to $10.2 billion and 35.4%. Management attributed the margin expansion to cost transformation initiatives that delivered $780 million in annualized savings during the year.\n\nCapital expenditures were $6.84 billion, down from $7.92 billion as the multi-year network densification program moved past its peak spending year. Management expects capital expenditures of $6.2 billion to $6.5 billion in fiscal year 2026.\n\nNet income was $2.06 billion, or $1.84 per diluted share, compared to $1.71 billion and $1.52 per diluted share. Free cash flow was $3.12 billion, up 34% from $2.33 billion.\n\nNet debt to adjusted EBITDA was 3.1 times at year end, down from 3.4 times. The company reiterated its target of reaching 2.75 times by the end of fiscal year 2027."
+    },
+    {
+      "doc_id": "doc_010",
+      "source": "Cormorant Properties REIT 10-K Excerpt FY2025 (synthetic)",
+      "text": "Cormorant Properties REIT reported total revenue of $3.18 billion for fiscal year 2025, an increase of 4.6% from $3.04 billion. Same-property net operating income grew 3.1% year-over-year.\n\nThe portfolio comprised 412 properties totaling 78.4 million square feet at year end. Occupancy was 94.2%, down from 95.8% in the prior year, with the decline concentrated in the Office segment where occupancy fell to 84.1% from 89.3%.\n\nThe Industrial segment, representing 61% of net operating income, achieved occupancy of 97.8% and cash releasing spreads of 34% on 8.4 million square feet of new and renewal leasing activity. The Office segment recorded negative releasing spreads of 6%.\n\nFunds from operations were $1.42 billion, or $3.86 per diluted share, compared to $1.38 billion and $3.79 per diluted share. Adjusted funds from operations were $1.21 billion after $210 million of recurring capital expenditures.\n\nThe company recorded impairment charges of $184 million on four suburban office assets held for sale. Net income attributable to common shareholders was $486 million compared to $702 million.\n\nTotal debt was $9.6 billion with a weighted average interest rate of 4.2% and a weighted average maturity of 6.1 years. Net debt to adjusted EBITDA was 5.4 times. The company declared dividends of $2.92 per share, representing a payout ratio of 76% of funds from operations."
+    },
+    {
+      "doc_id": "doc_011",
+      "source": "Vantage Semiconductor 10-K Excerpt FY2025 (synthetic)",
+      "text": "Vantage Semiconductor reported revenue of $6.74 billion for fiscal year 2025, an increase of 31.4% from $5.13 billion. Data Center revenue more than doubled to $2.91 billion and now represents 43% of total revenue, compared to 27% in the prior year.\n\nGross margin expanded to 58.6% from 51.2%, a 740 basis point improvement, driven by the higher data center mix and improved yields on the 4-nanometer process node. Management indicated that gross margin should stabilize in the 57% to 59% range.\n\nResearch and development expense was $1.89 billion, or 28.0% of revenue, compared to $1.62 billion and 31.6%. The company noted that R&D grew in absolute dollars while declining as a percentage of revenue due to operating leverage.\n\nOperating income was $1.44 billion with an operating margin of 21.4%, compared to $612 million and 11.9%. Net income was $1.21 billion, or $7.84 per diluted share, versus $498 million and $3.26 per diluted share.\n\nInventory was $1.34 billion at year end, up 42% from $944 million, which management characterized as a deliberate build ahead of anticipated data center demand. Days of inventory increased to 175 from 138.\n\nThe company's five largest customers accounted for 58% of revenue, up from 51%, and the single largest customer represented 23%. Management identified this concentration as a material risk factor."
+    },
+    {
+      "doc_id": "doc_012",
+      "source": "Thornbury Consumer Brands 10-K Excerpt FY2025 (synthetic)",
+      "text": "Thornbury Consumer Brands reported net sales of $14.2 billion for fiscal year 2025, an increase of 1.8% from $13.95 billion. Organic net sales grew 3.4%, offset by a 1.6 percentage point unfavorable foreign exchange impact.\n\nVolume declined 2.1% while price and mix contributed 5.5 percentage points of growth. Management acknowledged that elasticity had increased in the Snacks category, where volume declined 4.2%, while the Beverages category grew volume 1.1%.\n\nGross margin was 38.4%, up from 36.9%, as pricing actions and $310 million of productivity savings more than offset commodity and packaging cost inflation of approximately $420 million.\n\nAdvertising and consumer promotion spending was $1.28 billion, or 9.0% of net sales, up from 8.4% as the company increased investment behind three brand relaunches.\n\nNet income was $1.64 billion, or $5.12 per diluted share, compared to $1.51 billion and $4.66 per diluted share. Adjusted operating margin was 17.8%, an increase of 90 basis points.\n\nThe company generated free cash flow of $1.72 billion and returned $1.34 billion to shareholders. Net debt to adjusted EBITDA was 2.8 times, and management reaffirmed its long-term target range of 2.5 to 3.0 times.\n\nFor fiscal year 2026, Thornbury guided to organic net sales growth of 3% to 4% and adjusted earnings per share growth of 6% to 8%."
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "q_001",
+      "doc_id": "doc_001",
+      "question": "What was Northwind Systems' total revenue for fiscal year 2025, and how much did it grow year-over-year?",
+      "ground_truth_answer": "Northwind Systems reported total revenue of $8.42 billion in fiscal year 2025, an increase of 14.2% from $7.37 billion in fiscal year 2024.",
+      "relevant_doc_ids": [
+        "doc_001"
+      ]
+    },
+    {
+      "question_id": "q_002",
+      "doc_id": "doc_005",
+      "question": "How much revenue did Aventine Pharmaceuticals' lead product Zenvora generate, and what share of product revenue was that?",
+      "ground_truth_answer": "Zenvora generated $4.88 billion in net sales, up 18% year-over-year, representing 39.5% of total product revenue.",
+      "relevant_doc_ids": [
+        "doc_005"
+      ]
+    },
+    {
+      "question_id": "q_003",
+      "doc_id": "doc_011",
+      "question": "What was Vantage Semiconductor's gross margin in fiscal year 2025 and how did it change?",
+      "ground_truth_answer": "Gross margin expanded to 58.6% from 51.2%, a 740 basis point improvement, driven by a higher data center mix and improved 4-nanometer yields.",
+      "relevant_doc_ids": [
+        "doc_011"
+      ]
+    },
+    {
+      "question_id": "q_004",
+      "doc_id": "doc_006",
+      "question": "What was Silverline Energy's average realized price per barrel of oil equivalent in fiscal year 2025?",
+      "ground_truth_answer": "Silverline Energy's average realized price was $58.40 per barrel of oil equivalent, down from $71.20 in the prior year.",
+      "relevant_doc_ids": [
+        "doc_006"
+      ]
+    },
+    {
+      "question_id": "q_005",
+      "doc_id": "doc_009",
+      "question": "How many net postpaid phone subscribers did Brightpath Communications add in fiscal year 2025?",
+      "ground_truth_answer": "Brightpath added 1.24 million net postpaid phone subscribers, compared to 940,000 in the prior year.",
+      "relevant_doc_ids": [
+        "doc_009"
+      ]
+    },
+    {
+      "question_id": "q_006",
+      "doc_id": "doc_001",
+      "question": "How much did Northwind Systems spend on research and development, and how did that change?",
+      "ground_truth_answer": "Research and development spending rose 22% year-over-year to $1.84 billion, reflecting accelerated investment in machine learning infrastructure.",
+      "relevant_doc_ids": [
+        "doc_001"
+      ]
+    },
+    {
+      "question_id": "q_007",
+      "doc_id": "doc_004",
+      "question": "What was Pinnacle Financial's provision for credit losses and where were net charge-offs concentrated?",
+      "ground_truth_answer": "The provision for credit losses was $412 million, up from $268 million. Net charge-offs were 0.38% of average loans, concentrated in the office commercial real estate portfolio.",
+      "relevant_doc_ids": [
+        "doc_004"
+      ]
+    },
+    {
+      "question_id": "q_008",
+      "doc_id": "doc_007",
+      "question": "What was Meridian Logistics' purchased transportation expense as a percentage of revenue?",
+      "ground_truth_answer": "Purchased transportation expense was $2.88 billion, or 40.3% of revenue, up from 38.1% as the brokerage mix increased.",
+      "relevant_doc_ids": [
+        "doc_007"
+      ]
+    },
+    {
+      "question_id": "q_009",
+      "doc_id": "doc_010",
+      "question": "What were Cormorant Properties' cash releasing spreads in the Industrial segment versus the Office segment?",
+      "ground_truth_answer": "The Industrial segment achieved cash releasing spreads of 34%, while the Office segment recorded negative releasing spreads of 6%.",
+      "relevant_doc_ids": [
+        "doc_010"
+      ]
+    },
+    {
+      "question_id": "q_010",
+      "doc_id": "doc_008",
+      "question": "What were Aldergate's catastrophe losses in fiscal year 2025 and how did they compare to the prior year?",
+      "ground_truth_answer": "Catastrophe losses totaled $840 million, compared to $1.42 billion in fiscal year 2024.",
+      "relevant_doc_ids": [
+        "doc_008"
+      ]
+    },
+    {
+      "question_id": "q_011",
+      "doc_id": "doc_012",
+      "question": "How much productivity savings did Thornbury achieve and how did that compare to cost inflation?",
+      "ground_truth_answer": "Thornbury achieved $310 million of productivity savings, which along with pricing actions more than offset approximately $420 million of commodity and packaging cost inflation.",
+      "relevant_doc_ids": [
+        "doc_012"
+      ]
+    },
+    {
+      "question_id": "q_012",
+      "doc_id": "doc_003",
+      "question": "What were Cascade Manufacturing's capital expenditures and what were they spent on?",
+      "ground_truth_answer": "Capital expenditures were $287 million, up from $198 million, largely allocated to automation upgrades at the Ohio and Tennessee facilities.",
+      "relevant_doc_ids": [
+        "doc_003"
+      ]
+    },
+    {
+      "question_id": "q_013",
+      "doc_id": "doc_002",
+      "question": "What drove the decline in Halcyon Retail's net income, and what was net income excluding that item?",
+      "ground_truth_answer": "Net income fell to $186 million from $612 million largely due to a $310 million pre-tax impairment charge on 84 underperforming stores. Excluding the impairment, adjusted net income was $431 million.",
+      "relevant_doc_ids": [
+        "doc_002"
+      ]
+    },
+    {
+      "question_id": "q_014",
+      "doc_id": "doc_001",
+      "question": "Why did Northwind Systems' cash balance decline during fiscal year 2025?",
+      "ground_truth_answer": "Cash fell from $3.91 billion to $3.24 billion primarily due to a $900 million share repurchase program and the $420 million acquisition of Meridian Analytics completed in the third quarter.",
+      "relevant_doc_ids": [
+        "doc_001"
+      ]
+    },
+    {
+      "question_id": "q_015",
+      "doc_id": "doc_005",
+      "question": "What one-time charge affected Aventine's earnings and by how much per share?",
+      "ground_truth_answer": "Aventine recorded a $340 million charge to settle patent litigation concerning Coralux, which reduced diluted earnings per share by approximately $0.61.",
+      "relevant_doc_ids": [
+        "doc_005"
+      ]
+    },
+    {
+      "question_id": "q_016",
+      "doc_id": "doc_011",
+      "question": "Why did Vantage Semiconductor's inventory increase, and what happened to days of inventory?",
+      "ground_truth_answer": "Inventory rose 42% to $1.34 billion as a deliberate build ahead of anticipated data center demand, and days of inventory increased to 175 from 138.",
+      "relevant_doc_ids": [
+        "doc_011"
+      ]
+    },
+    {
+      "question_id": "q_017",
+      "doc_id": "doc_007",
+      "question": "How did Meridian Logistics' operating ratio change, and what happened in the Asset-Based Trucking segment specifically?",
+      "ground_truth_answer": "The consolidated operating ratio worsened to 91.4% from 89.8%. The Asset-Based Trucking segment operating ratio deteriorated to 93.1% from 90.2%, driven by lower revenue per loaded mile and driver wage inflation.",
+      "relevant_doc_ids": [
+        "doc_007"
+      ]
+    },
+    {
+      "question_id": "q_018",
+      "doc_id": "doc_009",
+      "question": "What drove Brightpath's adjusted EBITDA margin expansion, and what was the margin?",
+      "ground_truth_answer": "Adjusted EBITDA margin rose to 36.7% from 35.4%, attributed to cost transformation initiatives that delivered $780 million in annualized savings.",
+      "relevant_doc_ids": [
+        "doc_009"
+      ]
+    },
+    {
+      "question_id": "q_019",
+      "doc_id": "doc_002",
+      "question": "How many stores did Halcyon Retail close and open, and what are its plans going forward?",
+      "ground_truth_answer": "Halcyon closed 61 stores and opened 12, ending with 1,344 locations, and plans to close an additional 90 to 120 stores over the next two fiscal years.",
+      "relevant_doc_ids": [
+        "doc_002"
+      ]
+    },
+    {
+      "question_id": "q_020",
+      "doc_id": "doc_006",
+      "question": "How much of Silverline Energy's free cash flow was returned to shareholders?",
+      "ground_truth_answer": "Silverline returned $890 million to shareholders through dividends and repurchases, representing 63% of free cash flow of $1.42 billion.",
+      "relevant_doc_ids": [
+        "doc_006"
+      ]
+    },
+    {
+      "question_id": "q_021",
+      "doc_id": "doc_001",
+      "question": "What is Northwind Systems' revenue guidance for fiscal year 2026 and what principal risk did management identify?",
+      "ground_truth_answer": "Management expects fiscal 2026 revenue growth of 11% to 13% with 100 to 150 basis points of margin expansion, and identified customer concentration as a principal risk, with the top ten customers representing 24% of revenue.",
+      "relevant_doc_ids": [
+        "doc_001"
+      ]
+    },
+    {
+      "question_id": "q_022",
+      "doc_id": "doc_005",
+      "question": "When does Aventine face loss of exclusivity for Zenvora and how is management responding?",
+      "ground_truth_answer": "Zenvora loses exclusivity in the United States beginning in fiscal year 2029, and management has stated that offsetting this through the pipeline and business development is the company's primary strategic priority.",
+      "relevant_doc_ids": [
+        "doc_005"
+      ]
+    },
+    {
+      "question_id": "q_023",
+      "doc_id": "doc_011",
+      "question": "What customer concentration risk did Vantage Semiconductor disclose?",
+      "ground_truth_answer": "Vantage's five largest customers accounted for 58% of revenue, up from 51%, and the single largest customer represented 23%. Management identified this concentration as a material risk factor.",
+      "relevant_doc_ids": [
+        "doc_011"
+      ]
+    },
+    {
+      "question_id": "q_024",
+      "doc_id": "doc_003",
+      "question": "What was Cascade Manufacturing's backlog at year end?",
+      "ground_truth_answer": "Backlog stood at $4.12 billion, an increase of 19% year-over-year, which management said provides strong visibility into the coming two fiscal years.",
+      "relevant_doc_ids": [
+        "doc_003"
+      ]
+    },
+    {
+      "question_id": "q_025",
+      "doc_id": "doc_009",
+      "question": "What is Brightpath's leverage target and where does it stand now?",
+      "ground_truth_answer": "Net debt to adjusted EBITDA was 3.1 times at year end, down from 3.4 times, and the company reiterated a target of 2.75 times by the end of fiscal year 2027.",
+      "relevant_doc_ids": [
+        "doc_009"
+      ]
+    },
+    {
+      "question_id": "q_026",
+      "doc_id": "doc_001",
+      "question": "Compare research and development spending as a percentage of revenue at Vantage Semiconductor and Aventine Pharmaceuticals.",
+      "ground_truth_answer": "Vantage Semiconductor spent $1.89 billion on R&D, or 28.0% of revenue. Aventine Pharmaceuticals spent $3.41 billion, or 27.6% of total revenue. The two are broadly comparable, at roughly 28% each.",
+      "relevant_doc_ids": [
+        "doc_005",
+        "doc_011"
+      ]
+    },
+    {
+      "question_id": "q_027",
+      "doc_id": "doc_002",
+      "question": "Which company had the weaker year, Halcyon Retail or Meridian Logistics, and what was the main driver in each case?",
+      "ground_truth_answer": "Both declined. Halcyon Retail's net income fell to $186 million from $612 million on a 2.1% sales decline, gross margin contraction to 31.2%, and a $310 million impairment charge. Meridian Logistics' net income fell to $312 million from $421 million on operating ratio deterioration to 91.4% amid soft freight rates. Halcyon's decline was proportionally far steeper.",
+      "relevant_doc_ids": [
+        "doc_002",
+        "doc_007"
+      ]
+    },
+    {
+      "question_id": "q_028",
+      "doc_id": "doc_004",
+      "question": "Compare the capital return programs at Pinnacle Financial Bancorp and Aldergate Insurance Group.",
+      "ground_truth_answer": "Pinnacle Financial's board authorized a $600 million share repurchase program in the fourth quarter. Aldergate repurchased $720 million of common stock and paid $410 million in dividends during the year.",
+      "relevant_doc_ids": [
+        "doc_004",
+        "doc_008"
+      ]
+    },
+    {
+      "question_id": "q_029",
+      "doc_id": "doc_010",
+      "question": "Which companies disclosed impairment charges, and how large were they?",
+      "ground_truth_answer": "Halcyon Retail Group recorded a $310 million pre-tax impairment related to 84 underperforming stores, and Cormorant Properties REIT recorded $184 million of impairment charges on four suburban office assets held for sale.",
+      "relevant_doc_ids": [
+        "doc_002",
+        "doc_010"
+      ]
+    },
+    {
+      "question_id": "q_030",
+      "doc_id": "doc_012",
+      "question": "Compare the fiscal year 2026 guidance given by Thornbury Consumer Brands and Northwind Systems.",
+      "ground_truth_answer": "Thornbury guided to organic net sales growth of 3% to 4% and adjusted EPS growth of 6% to 8%. Northwind Systems guided to revenue growth of 11% to 13% with 100 to 150 basis points of margin expansion.",
+      "relevant_doc_ids": [
+        "doc_001",
+        "doc_012"
+      ]
+    }
+  ]
+}

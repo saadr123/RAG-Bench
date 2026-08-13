@@ -1,0 +1,365 @@
+{
+  "config_name": "fixed_size_top5",
+  "queries": {
+    "q_001": {
+      "question": "What was Northwind Systems' total revenue for fiscal year 2025, and how much did it grow year-over-year?",
+      "generated_answer": "Northwind Systems' total revenue for fiscal year 2025 was $8.42 billion, representing an increase of 14.2% compared to $7.37 billion in fiscal year 2024.",
+      "ground_truth_answer": "Northwind Systems reported total revenue of $8.42 billion in fiscal year 2025, an increase of 14.2% from $7.37 billion in fiscal year 2024.",
+      "retrieved_chunk_ids": [
+        "doc_001_fixed_0",
+        "doc_001_fixed_2",
+        "doc_001_fixed_1",
+        "doc_009_fixed_2",
+        "doc_002_fixed_1"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer completely and accurately matches all key facts and figures from the reference answer.",
+      "judge_cost_usd": 0.000416,
+      "input_tokens": 760,
+      "output_tokens": 49,
+      "latency_seconds": 0.6282937526702881,
+      "estimated_cost_usd": 0.001005
+    },
+    "q_002": {
+      "question": "How much revenue did Aventine Pharmaceuticals' lead product Zenvora generate, and what share of product revenue was that?",
+      "generated_answer": "Based on the provided context, Aventine Pharmaceuticals' lead product, Zenvora, generated $4.88 billion in net sales, which represents 39.5% of total product revenue.",
+      "ground_truth_answer": "Zenvora generated $4.88 billion in net sales, up 18% year-over-year, representing 39.5% of total product revenue.",
+      "retrieved_chunk_ids": [
+        "doc_005_fixed_0",
+        "doc_005_fixed_2",
+        "doc_011_fixed_1",
+        "doc_012_fixed_1",
+        "doc_011_fixed_2"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer matches all the key facts and figures from the reference answer regarding Zenvora's revenue and its share of total product revenue.",
+      "judge_cost_usd": 0.000453,
+      "input_tokens": 747,
+      "output_tokens": 41,
+      "latency_seconds": 0.49216365814208984,
+      "estimated_cost_usd": 0.000952
+    },
+    "q_003": {
+      "question": "What was Vantage Semiconductor's gross margin in fiscal year 2025 and how did it change?",
+      "generated_answer": "Vantage Semiconductor's gross margin in fiscal year 2025 was 58.6%, expanding from 51.2% in the prior year, representing a 740 basis point improvement.",
+      "ground_truth_answer": "Gross margin expanded to 58.6% from 51.2%, a 740 basis point improvement, driven by a higher data center mix and improved 4-nanometer yields.",
+      "retrieved_chunk_ids": [
+        "doc_011_fixed_0",
+        "doc_001_fixed_2",
+        "doc_003_fixed_3",
+        "doc_003_fixed_0",
+        "doc_004_fixed_0"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer accurately captures the gross margin percentage, the change, and the exact basis point improvement stated in the reference answer.",
+      "judge_cost_usd": 0.000439,
+      "input_tokens": 683,
+      "output_tokens": 45,
+      "latency_seconds": 0.5905377864837646,
+      "estimated_cost_usd": 0.0009080000000000001
+    },
+    "q_004": {
+      "question": "What was Silverline Energy's average realized price per barrel of oil equivalent in fiscal year 2025?",
+      "generated_answer": "Based on the provided context, Silverline Energy's average realized price per barrel of oil equivalent in fiscal year 2025 was $58.40.",
+      "ground_truth_answer": "Silverline Energy's average realized price was $58.40 per barrel of oil equivalent, down from $71.20 in the prior year.",
+      "retrieved_chunk_ids": [
+        "doc_006_fixed_0",
+        "doc_006_fixed_2",
+        "doc_006_fixed_1",
+        "doc_008_fixed_1",
+        "doc_001_fixed_2"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer accurately states Silverline Energy's average realized price per barrel of oil equivalent in fiscal year 2025 as $58.40, matching the key figure in the reference answer.",
+      "judge_cost_usd": 0.000514,
+      "input_tokens": 771,
+      "output_tokens": 35,
+      "latency_seconds": 0.7051458358764648,
+      "estimated_cost_usd": 0.000946
+    },
+    "q_005": {
+      "question": "How many net postpaid phone subscribers did Brightpath Communications add in fiscal year 2025?",
+      "generated_answer": "Brightpath Communications added 1.24 million net postpaid phone subscribers in fiscal year 2025.",
+      "ground_truth_answer": "Brightpath added 1.24 million net postpaid phone subscribers, compared to 940,000 in the prior year.",
+      "retrieved_chunk_ids": [
+        "doc_009_fixed_0",
+        "doc_009_fixed_1",
+        "doc_001_fixed_2",
+        "doc_001_fixed_1",
+        "doc_003_fixed_3"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer accurately states the exact number of net postpaid phone subscribers added in fiscal year 2025 as provided in the reference answer.",
+      "judge_cost_usd": 0.000423,
+      "input_tokens": 662,
+      "output_tokens": 23,
+      "latency_seconds": 0.5144684314727783,
+      "estimated_cost_usd": 0.000777
+    },
+    "q_006": {
+      "question": "How much did Northwind Systems spend on research and development, and how did that change?",
+      "generated_answer": "Based on the provided context, Northwind Systems' research and development (R&D) spending is mentioned in two separate sections (which contain slightly differing figures likely due to fragmented context blocks):\n\n* In one section, R&D spending rose **22% year-over-year to $1.84 billion**, driven by accelerated investment in machine learning infrastructure. \n* In another section, R&D expense is reported as **$1.89 billion (or 28.0% of revenue)** compared to **$1.62 billion (or 31.6% of revenue)** in the prior year, with the company noting it grew in absolute dollars while declining as a percentage of revenue due to operating leverage.",
+      "ground_truth_answer": "Research and development spending rose 22% year-over-year to $1.84 billion, reflecting accelerated investment in machine learning infrastructure.",
+      "retrieved_chunk_ids": [
+        "doc_001_fixed_0",
+        "doc_011_fixed_1",
+        "doc_001_fixed_1",
+        "doc_005_fixed_1",
+        "doc_005_fixed_2"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer includes the exact correct figures and change from the reference answer while also noting additional context present in the source material.",
+      "judge_cost_usd": 0.0005319999999999999,
+      "input_tokens": 710,
+      "output_tokens": 153,
+      "latency_seconds": 0.8657882213592529,
+      "estimated_cost_usd": 0.0014750000000000002
+    },
+    "q_007": {
+      "question": "What was Pinnacle Financial's provision for credit losses and where were net charge-offs concentrated?",
+      "generated_answer": "Based on the provided context:\n\n* **Provision for credit losses:** $412 million (compared to $268 million in the prior year).\n* **Concentration of net charge-offs:** Concentrated in the office commercial real estate portfolio.",
+      "ground_truth_answer": "The provision for credit losses was $412 million, up from $268 million. Net charge-offs were 0.38% of average loans, concentrated in the office commercial real estate portfolio.",
+      "retrieved_chunk_ids": [
+        "doc_004_fixed_0",
+        "doc_004_fixed_1",
+        "doc_010_fixed_2",
+        "doc_008_fixed_2",
+        "doc_008_fixed_1"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 4,
+      "judge_reasoning": "The generated answer includes the provision for credit losses and the main concentration of net charge-offs, but omits the specific net charge-off ratio of 0.38% mentioned in the reference answer.",
+      "judge_cost_usd": 0.000532,
+      "input_tokens": 717,
+      "output_tokens": 53,
+      "latency_seconds": 0.6636044979095459,
+      "estimated_cost_usd": 0.000982
+    },
+    "q_008": {
+      "question": "What was Meridian Logistics' purchased transportation expense as a percentage of revenue?",
+      "generated_answer": "Based on the provided context, purchased transportation expense was 40.3% of revenue (totaling $2.88 billion), up from 38.1% in the prior period.",
+      "ground_truth_answer": "Purchased transportation expense was $2.88 billion, or 40.3% of revenue, up from 38.1% as the brokerage mix increased.",
+      "retrieved_chunk_ids": [
+        "doc_007_fixed_0",
+        "doc_002_fixed_1",
+        "doc_001_fixed_2",
+        "doc_007_fixed_1",
+        "doc_010_fixed_3"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer accurately captures both the percentage (40.3%), the absolute amount ($2.88 billion), the prior period comparison (38.1%), and the context provided in the reference answer.",
+      "judge_cost_usd": 0.000511,
+      "input_tokens": 645,
+      "output_tokens": 41,
+      "latency_seconds": 0.63759446144104,
+      "estimated_cost_usd": 0.00085
+    },
+    "q_009": {
+      "question": "What were Cormorant Properties' cash releasing spreads in the Industrial segment versus the Office segment?",
+      "generated_answer": "Based on the provided context, Cormorant Properties' cash releasing spreads in the Industrial segment were 34% (on 8.4 million square feet of new and renewal leasing activity), while the Office segment recorded negative releasing spreads of 6%.",
+      "ground_truth_answer": "The Industrial segment achieved cash releasing spreads of 34%, while the Office segment recorded negative releasing spreads of 6%.",
+      "retrieved_chunk_ids": [
+        "doc_010_fixed_0",
+        "doc_010_fixed_1",
+        "doc_012_fixed_2",
+        "doc_002_fixed_2",
+        "doc_010_fixed_3"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer accurately captures the cash releasing spreads for both the Industrial (34%) and Office (-6%) segments as stated in the reference answer.",
+      "judge_cost_usd": 0.000448,
+      "input_tokens": 625,
+      "output_tokens": 50,
+      "latency_seconds": 0.5883924961090088,
+      "estimated_cost_usd": 0.000875
+    },
+    "q_010": {
+      "question": "What were Aldergate's catastrophe losses in fiscal year 2025 and how did they compare to the prior year?",
+      "generated_answer": "Based on the provided context, Aldergate's catastrophe losses in fiscal year 2025 totaled $840 million, compared to $1.42 billion in the prior year.",
+      "ground_truth_answer": "Catastrophe losses totaled $840 million, compared to $1.42 billion in fiscal year 2024.",
+      "retrieved_chunk_ids": [
+        "doc_008_fixed_0",
+        "doc_001_fixed_2",
+        "doc_008_fixed_2",
+        "doc_008_fixed_3",
+        "doc_007_fixed_2"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer accurately states both the fiscal year 2025 catastrophe losses ($840 million) and the comparison to the prior year ($1.42 billion), matching the reference answer completely.",
+      "judge_cost_usd": 0.000511,
+      "input_tokens": 622,
+      "output_tokens": 41,
+      "latency_seconds": 0.6881282329559326,
+      "estimated_cost_usd": 0.000827
+    },
+    "q_011": {
+      "question": "How much productivity savings did Thornbury achieve and how did that compare to cost inflation?",
+      "generated_answer": "Based on the provided context, Thornbury achieved $310 million of productivity savings. This more than offset commodity and packaging cost inflation of approximately $420 million.",
+      "ground_truth_answer": "Thornbury achieved $310 million of productivity savings, which along with pricing actions more than offset approximately $420 million of commodity and packaging cost inflation.",
+      "retrieved_chunk_ids": [
+        "doc_012_fixed_2",
+        "doc_012_fixed_0",
+        "doc_003_fixed_3",
+        "doc_012_fixed_1",
+        "doc_008_fixed_2"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 4,
+      "judge_reasoning": "The generated answer correctly states the productivity savings and the cost inflation amount, but slightly misinterprets the relationship by omitting that pricing actions were also required alongside the productivity savings to offset the inflation.",
+      "judge_cost_usd": 0.000481,
+      "input_tokens": 637,
+      "output_tokens": 35,
+      "latency_seconds": 0.7606937885284424,
+      "estimated_cost_usd": 0.000812
+    },
+    "q_012": {
+      "question": "What were Cascade Manufacturing's capital expenditures and what were they spent on?",
+      "generated_answer": "Based on the provided context, the information regarding capital expenditures and what they were spent on appears in the fourth text excerpt, but that excerpt does not explicitly name \"Cascade Manufacturing Corp\" as the company. \n\nHowever, looking at the context concerning Cascade Manufacturing Corp:\n* Revenue, divisions, gross profit, and net income details are provided for Cascade Manufacturing Corp.\n* The context does not contain enough information to answer what Cascade Manufacturing's capital expenditures were or what they were spent on. \n\nTherefore, based strictly on the provided text, the context does not contain enough information to answer this question.",
+      "ground_truth_answer": "Capital expenditures were $287 million, up from $198 million, largely allocated to automation upgrades at the Ohio and Tennessee facilities.",
+      "retrieved_chunk_ids": [
+        "doc_003_fixed_0",
+        "doc_005_fixed_2",
+        "doc_012_fixed_1",
+        "doc_003_fixed_2",
+        "doc_009_fixed_2"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 1,
+      "judge_reasoning": "The generated answer completely fails to provide the requested financial figures and incorrectly claims the information is missing from the context.",
+      "judge_cost_usd": 0.000482,
+      "input_tokens": 741,
+      "output_tokens": 122,
+      "latency_seconds": 0.9278879165649414,
+      "estimated_cost_usd": 0.001351
+    },
+    "q_013": {
+      "question": "What drove the decline in Halcyon Retail's net income, and what was net income excluding that item?",
+      "generated_answer": "Based on the provided context, Halcyon Retail's net income was impacted by an impairment charge related to underperforming store locations. Including this charge, net income was $186 million. Excluding the impairment charge, adjusted net income was $431 million.",
+      "ground_truth_answer": "Net income fell to $186 million from $612 million largely due to a $310 million pre-tax impairment charge on 84 underperforming stores. Excluding the impairment, adjusted net income was $431 million.",
+      "retrieved_chunk_ids": [
+        "doc_002_fixed_0",
+        "doc_002_fixed_2",
+        "doc_012_fixed_0",
+        "doc_008_fixed_1",
+        "doc_012_fixed_2"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer accurately captures all the key facts and figures from the reference, including the final net income, the impact of the impairment charge, and the exact adjusted net income excluding the charge.",
+      "judge_cost_usd": 0.000523,
+      "input_tokens": 760,
+      "output_tokens": 54,
+      "latency_seconds": 0.6295733451843262,
+      "estimated_cost_usd": 0.00103
+    },
+    "q_014": {
+      "question": "Why did Northwind Systems' cash balance decline during fiscal year 2025?",
+      "generated_answer": "Based on the provided context, Northwind Systems' cash and cash equivalents declined primarily due to a $900 million share repurchase program and the $420 million acquisition of Meridian Analytics completed in the third quarter.",
+      "ground_truth_answer": "Cash fell from $3.91 billion to $3.24 billion primarily due to a $900 million share repurchase program and the $420 million acquisition of Meridian Analytics completed in the third quarter.",
+      "retrieved_chunk_ids": [
+        "doc_001_fixed_0",
+        "doc_009_fixed_2",
+        "doc_001_fixed_2",
+        "doc_006_fixed_2",
+        "doc_012_fixed_2"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer fully matches the key facts and figures from the reference answer regarding the reasons for the cash decline.",
+      "judge_cost_usd": 0.00042300000000000004,
+      "input_tokens": 766,
+      "output_tokens": 44,
+      "latency_seconds": 0.5620167255401611,
+      "estimated_cost_usd": 0.000986
+    },
+    "q_015": {
+      "question": "What one-time charge affected Aventine's earnings and by how much per share?",
+      "generated_answer": "Based on the provided context, Aventine recorded a $340 million charge related to the settlement of patent litigation concerning Coralux, which reduced diluted earnings per share by approximately $0.61.",
+      "ground_truth_answer": "Aventine recorded a $340 million charge to settle patent litigation concerning Coralux, which reduced diluted earnings per share by approximately $0.61.",
+      "retrieved_chunk_ids": [
+        "doc_004_fixed_2",
+        "doc_005_fixed_0",
+        "doc_008_fixed_1",
+        "doc_010_fixed_1",
+        "doc_005_fixed_2"
+      ],
+      "retrieval": {
+        "hit_at_k": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      "judge_score": 5,
+      "judge_reasoning": "The generated answer fully and accurately matches all key facts and figures from the reference answer.",
+      "judge_cost_usd": 0.00038199999999999996,
+      "input_tokens": 737,
+      "output_tokens": 41,
+      "latency_seconds": 0.5119707584381104,
+      "estimated_cost_usd": 0.000942
+    }
+  }
+}

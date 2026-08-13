@@ -1,0 +1,22 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Vector store artifacts (regenerated on every run)
+.chroma/
+chroma_db/
+
+# Working results are ignored, but the published run is committed
+# under results/published/ so the findings in the README are reproducible
+# and visible without cloning and re-running the sweep.
+results/*.json
+!results/.gitkeep
+
+.DS_Store
