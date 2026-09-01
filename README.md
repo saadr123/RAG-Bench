@@ -31,7 +31,7 @@ That's worth knowing because those two metrics get reported on their own a lot.
 | What | Metric | How |
 |---|---|---|
 | Retrieval | hit@k, precision@k, recall@k | plain math against labeled documents, no API call |
-| Answer quality | 1-5 correctness score | a second LLM call grades the answer against the reference |
+| Answer quality | 1-5 correctness score | LLM call grades the answer against the reference |
 | Cost | tokens, dollars per query, latency | recorded on every API call |
 
 A note on the cost numbers: I ran this on a free API tier, so I didn't actually spend
