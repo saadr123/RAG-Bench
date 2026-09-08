@@ -3,9 +3,6 @@ RAG-Bench results dashboard.
 
 Run with: streamlit run dashboard/app.py
 
-Reads every results/<config_name>.json file produced by src/runner.py and
-gives three views: an overview comparison table, a quality-vs-cost scatter,
-and a per-query drill-down for any individual configuration.
 """
 
 from __future__ import annotations
